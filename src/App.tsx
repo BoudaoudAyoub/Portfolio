@@ -1,12 +1,5 @@
-import './App.css'
+import MainContainer from './layouts/mainContainer'
+export default function App() {
 
-function App() {
-
-  return (
-    <>
-      <h1 className='text-[25px] text-red-500'>Hello Mr Ayoub Boudaoud</h1>
-    </>
-  )
+  return (<MainContainer />)
 }
-
-export default App
