@@ -1,8 +1,10 @@
 import React from "react";
-export default function MainContainer() {
-    return(
-        <React.Fragment>
-            Continue the work on the portfolio 
-        </React.Fragment>
-    )
-}
+import TopMenu from "./components/TopMenu/topMenu";
+const MainContainer: React.FC = () => {
+  
+    return (
+       <TopMenu />
+    );
+};
+ 
+export default MainContainer;
