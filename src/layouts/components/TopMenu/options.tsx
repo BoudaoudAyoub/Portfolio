@@ -1,32 +1,41 @@
+import React from "react";
 export interface IMenuOptions{
     key: number;
     link: string;
     name: string;
+    isActive: boolean;
 } 
 
 export default function Options(){
 
     const options: (IMenuOptions)[] = [
-        { key: 1, name: 'Home', link: 'home' },
-        { key: 2, name: 'Education', link: 'education' },
-        { key: 3, name: 'Experience', link: 'experience' },
-        { key: 4, name: 'Projects', link: 'projects' },
-        { key: 5, name: 'Skills', link: 'skills' },
-        { key: 6, name: 'Contact', link: 'contact' },
+        { key: 1, name: 'Home', link: 'home', isActive: true },
+        { key: 2, name: 'Education', link: 'education', isActive: false },
+        { key: 3, name: 'Experience', link: 'experience', isActive: false },
+        { key: 4, name: 'Projects', link: 'projects', isActive: false },
+        { key: 5, name: 'Skills', link: 'skills', isActive: false },
+        { key: 6, name: 'Contact', link: 'contact', isActive: false },
     ];
 
+    const [ optionsTabs, setOptions ] = React.useState<(IMenuOptions)[]>(options);
+
+    const setCurrentActive = (key: number) => {
+        let newItems = options.map(item => item.key === key ? {...item, isActive: true} : 
+            {...item, isActive: false});
+        setOptions(newItems);
+    }
+
     return(
-        options.map((item) => (
-            <a
+        optionsTabs.map((item) => (
+            <span
                 key={item.key}
-                href={item.link}
-                //aria-current={item.current ? 'page' : undefined}
-                className={classNames('text-gray-700 hover:text-gray-800 dark:text-gray-300 dark:hover:text-gray-100',
-                    'rounded-md px-3 py-2 text-sm font-medium',
+                onClick={() => setCurrentActive(item.key)}
+                className={classNames(`${item.isActive ? 'text-red-500' : 'text-gray-700 dark:text-gray-300 '} hover:text-gray-800 dark:hover:text-gray-100`,
+                    'cursor-pointer rounded-md px-3 py-2 text-sm font-medium',
                 )}
             >
                 {item.name}
-            </a>
+            </span>
         ))
     )
 } 
