@@ -39,8 +39,8 @@ export default function Options({ optionTypeId }: OptionsProps) {
                         key={item.key}
                         onClick={() => setCurrentActive(item.key)}
                         className={classNames(
-                            `${item.isActive ? "text-red-500" : "text-gray-700 dark:text-gray-300"} hover:text-gray-800 dark:hover:text-gray-100`,
-                            "cursor-pointer rounded-md px-3 py-2 text-sm font-medium"
+                            `${item.isActive ? 'text-[#FF982E] font-800' : [6, 5].includes(item.key) ? 'text-[#F8FAFC]' : 'text-gray-700 dark:text-gray-300'}`,
+                            "cursor-pointer select-none rounded-md px-3 py-2 text-sm font-medium"
                         )}
                     >
                         {item.name}
@@ -51,7 +51,7 @@ export default function Options({ optionTypeId }: OptionsProps) {
                         onClick={() => setCurrentActive(item.key)}
                         className={classNames(
                              `${item.isActive ? "text-red-500" : "text-gray-700 dark:text-gray-300"} hover:text-gray-800 dark:hover:text-gray-100`,
-                            "cursor-pointer rounded-md px-3 py-2 text-sm font-medium"
+                            "cursor-pointer select-none rounded-md px-3 py-2 text-sm font-medium"
                         )}
                     >
                         {item.name}

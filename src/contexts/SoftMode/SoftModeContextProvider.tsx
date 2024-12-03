@@ -16,11 +16,11 @@ export const SoftModeProvider: React.FC<ISoftModeProviderProps> = ({ children })
     if (isSoftMode) {
       localStorage.setItem('mode', 'dark');
       bodyEle.add('dark', 'bg-gray-800');
-      bodyEle.remove('bg-[#FFFFFF]');
+      bodyEle.remove('bg-[#F8FAFC]');
     } else {
       localStorage.setItem('mode', 'light');
       bodyEle.remove('dark', 'bg-gray-800');
-      bodyEle.add('bg-[#FFFFFF]');
+      bodyEle.add('bg-[#F8FAFC]');
     }
   }, [isSoftMode]);
   

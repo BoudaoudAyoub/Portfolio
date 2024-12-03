@@ -7,7 +7,7 @@ export default interface ILanguageItemProps {
 
 export const LanguageItem: React.FC<ILanguageItemProps> = ({ language, handleLanguageChange }) => {
     return(
-        <div className="py-2 flex w-full items-center cursor-pointer text-[15px] hover:text-sky-500 dark:hover:text-sky-400"            
+        <div className="py-2 flex w-full items-center cursor-pointer text-[14px] hover:text-sky-500 dark:hover:text-sky-400"            
             key={language.key}
         >
             <div 

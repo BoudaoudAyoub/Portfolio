@@ -42,7 +42,7 @@ export default function Language() {
                         className={`flex items-center outline-none p-[6px] rounded text-amber-300 transition-all duration-300 ease-in-out`}
                         onMouseLeave={() => setHiGlobeHover(false)}
                     >
-                        <div className="flex items-center text-slate-700 dark:text-white pt-[1px]">
+                        <div className="flex items-center text-[#F8FAFC] pt-[1px]">
                             <currentLanguage.Flag className="h-4 w-5" />
                             <p className="pl-1 text-[12px] font-semibold">
                                 {currentLanguage.alias}
@@ -51,14 +51,10 @@ export default function Language() {
                     
                 </MenuButton>
             </Box>
-
             <MenuItems
                 transition
-                className="bg-white absolute w-[200px] border border-[#e1e1e1] shadow-md right-0 mt-4 z-50 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in">
-                <div className="block p-8">                    
-                    <Box className="w-full pl-3 pb-5">
-                        <span className="text-sm text-gray-500 w-full">Languages</span>
-                    </Box>
+                className="rounded bg-white absolute w-[160px] border border-[#e1e1e1] shadow-md right-0 mt-2 z-50 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in">
+                <div className="block px-2 py-4">
                     <Box className="justify-center h-auto">
                         {Languages.map(item => 
                             <LanguageItem 

@@ -1,15 +1,18 @@
+import './topMenu.scss'
 import Options from "./options";
-import SoftMode from "../../../components/softMode";
+import GitHub from "../../../components/SMedias/github";
+import useWidthSize from "../../../hooks/Size/useWidthSize";
 import Language from "../../../components/language/lanaguage";
+import SoftMode from "../../../components/Preferences/softMode";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react";
-import useWidthSize from "../../../hooks/Size/useWidthSize";
+import LinkedIn from '../../../components/SMedias/linkedin';
 
 export default function TopMenu() {
     const boxWidth = useWidthSize();
     return (
-        <Disclosure as="nav" className="dark:bg-gray-800 dark:border-gray-800">
-            <div className="mx-auto max-w-7xl px-2 sm:px-6 px-8 pt-5">
+        <Disclosure as="nav" className="fixed dark:border-gray-800 navbar">
+            <div className="py-3 mx-auto max-w-7xl px-2 sm:px-6 px-8">
                 <div className="relative flex h-16 items-center justify-between">
                     {boxWidth <= 799 && (
                         <div className="absolute inset-y-0 right-0 flex items-center">
@@ -41,9 +44,14 @@ export default function TopMenu() {
                                     </div>
                                 </div>
                                 <div className="ml-auto">
-                                    <div className="flex space-x-4">
+                                    <div className="flex items-center justify-between">
                                         <Language />
-                                        <SoftMode />
+                                        <div className="flex border-l border-slate-200 ml-3 pl-3 dark:border-slate-600">
+                                            <SoftMode />
+                                            <GitHub />
+                                            <span className='ml-6'></span>
+                                            <LinkedIn />
+                                        </div>
                                     </div>
                                 </div>
                             </>
