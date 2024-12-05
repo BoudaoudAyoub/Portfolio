@@ -42,7 +42,7 @@ export default function Language() {
                         className={`flex items-center outline-none p-[6px] rounded text-amber-300 transition-all duration-300 ease-in-out`}
                         onMouseLeave={() => setHiGlobeHover(false)}
                     >
-                        <div className="flex items-center text-[#F8FAFC] pt-[1px]">
+                        <div className={`flex items-center text-[#2D3E50] dark:text-[#F5F8FA] pt-[1px]`}>
                             <currentLanguage.Flag className="h-4 w-5" />
                             <p className="pl-1 text-[12px] font-semibold">
                                 {currentLanguage.alias}

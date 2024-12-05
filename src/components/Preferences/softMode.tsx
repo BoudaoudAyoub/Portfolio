@@ -12,7 +12,7 @@ export default function SoftMode() {
             aria-haspopup="listbox" 
             aria-expanded="false" 
             aria-labelledby="headlessui-label-:R1lkcr6: headlessui-listbox-button-:R2lkcr6:">
-            <MdLightMode className="text-[#F8FAFC] dark:hidden w-5 h-5 inline hover:fill-[#093D3F] dark:fill-white" />
+            <MdLightMode className={`text-[#2D3E50] dark:text-[#F5F8FA] dark:hidden w-5 h-5 inline hover:fill-[#093D3F] dark:fill-white`} />
             <AiFillMoon 
                 className={`hidden w-5 h-5 dark:inline dark:text-gray-300`}
             />

@@ -1,12 +1,15 @@
 import React from "react";
-import Home from "../pages/Home/home";
+import MainRouting from "../routes/routes";
 import TopMenu from "./components/TopMenu/topMenu";
+import { Box } from "@mui/material";
 const MainContainer: React.FC = () => {
   
     return (
         <React.Fragment>
-            <TopMenu />
-            <Home />
+            <Box className="mx-auto max-w-full">
+                <TopMenu />
+                <MainRouting />
+            </Box>
        </React.Fragment>
     );
 };

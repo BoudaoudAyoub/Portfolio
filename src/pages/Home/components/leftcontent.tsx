@@ -1,43 +1,38 @@
-import { Box } from "@mui/material";
-import { FiDownloadCloud } from "react-icons/fi";
-import { Typewriter } from "react-simple-typewriter";
+import { GoDownload } from "react-icons/go";
 import download from "../../../actions/download";
+import { Typewriter } from 'react-simple-typewriter';
 export default function LeftHomeContent(){
     return(
-        <Box className="inline-flex max-w-[38rem] pl-8 m-auto">
-            <Box className={`flex-grow flex-shrink-0 basis-0 `}>
-                <h1 className="text-gray-800 dark:text-gray-200 text-4xl sm:text-5xl font-bold">
-                    Hi, I'm <span className="text-[#7551FB]">Ayoub Boudaoud</span>
-                </h1>
-                <h3 className="text-3xl font-semibold text-[#8892b0] py-5">
-                    <Typewriter
-                        words={["Software Engineer"]}
-                        loop={0}
-                        cursor
-                        cursorStyle="|"
-                        typeSpeed={100}
-                        deleteSpeed={50}
-                        delaySpeed={3000} // Delay before typing again
-                    />
-                </h3>
-                <p className="text-gray-500 dark:text-[#e1e1e1] max-w-3xl mx-auto text-wrap">
-                    Experienced and highly skilled .NET software developer with over three
-                    years of experience delivering solutions for various international
-                    companies, primarily using Microsoft technologies. Proficient in
-                    working within agile environments to design and implement
-                    high-quality, high-performance software as a service (SaaS) across
-                    diverse sectors and industries.
-                </p>
-                <div className="btn-box flex mt-12 space-x-4">
-                <span
-                    className="cursor-pointer flex text-black rounded-[6px] py-[0.8rem] px-[1.9rem] shadow-xl border border-gray-100"
-                        onClick={() => download("src/files/cvPDF/Ayoub.Boudaoud.pdf", "Ayoub.Boudaoud", 'pdf')}
+        <div className="text-center xl:text-left py-5 order-2 xl:order-none xl:w-[50%]">
+            <h1 className="text-[30px] xl:text-[50px] leading-[1.1] font-semibold my-4">
+                <span className="dark:text-[#F5F8FA]">Hi, I'm</span> <br /><span className=" text-[#348C79] dark:text-[#6941C6]">Ayoub Boudaoud</span>
+            </h1>
+            <span className="text-xl dark:text-[#F5F8FA]">
+                <Typewriter
+                    words={["Software Engineer"]}
+                    loop={0}
+                    cursor
+                    cursorStyle="|"
+                    typeSpeed={100}
+                    deleteSpeed={50}
+                    delaySpeed={3000}
+                />
+            </span>
+            <p className="max-w-[500px] xl:max-w-full mt-4 mb-9 dark:text-[#F5F8FA]">
+                I bring expertise in crafting innovative solutions through a strong command of 
+                diverse programming languages and modern technologies. My skill set enables me to
+                design scalable systems and optimize user experiences. With a focus on quality and innovation, 
+                I consistently deliver impactful digital solutions
+            </p>
+            <div className="flex flex-col xl:flex-row items-center gap-8 mb-5">
+                <button
+                    className="border border-[#348C79] dark:border-[#6941C6]  py-2 px-4 rounded-full uppercase flex items-center gap-2"
+                    onClick={() => download("src/files/cvPDF/Ayoub.Boudaoud.pdf", "Ayoub.Boudaoud", 'pdf')}
                 >
-                        <span className="text-[14px]">Download cv</span>
-                        <FiDownloadCloud className="w-4 h-4 ml-2" />    
-                    </span>
-                </div>
-            </Box>
-        </Box>
+                    <span className={`text-[10px] text-[#348C79] dark:text-[#6941C6] font-bold`}>Download cv</span>
+                    <GoDownload className="w-3 h-3 ml-2 text-[#348C79] dark:text-[#6941C6] font-bold" />    
+                </button>
+            </div>
+        </div>
     )
 }

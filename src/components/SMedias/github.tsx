@@ -1,6 +1,6 @@
 export default function GitHub(){
     return(
-        <span className="cursor-pointer flex m-auto text-[#F8FAFC] hover:text-slate-500 dark:hover:text-slate-300"
+        <span className={`text-[#2D3E50] dark:text-[#F5F8FA] cursor-pointer flex m-auto hover:text-slate-500 dark:hover:text-slate-300`}
             onClick={() => window.open("https://github.com/BoudaoudAyoub")} 
         >
             <span className="sr-only">Ayoub Boudaoud's GitHub</span>

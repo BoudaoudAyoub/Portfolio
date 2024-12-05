@@ -3,11 +3,14 @@ import App from './App.tsx'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { SoftModeProvider } from './contexts/SoftMode/SoftModeContextProvider.tsx'
+import { BrowserRouter } from 'react-router-dom'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <SoftModeProvider>
-      <App />
-    </SoftModeProvider>
+    <BrowserRouter>
+      <SoftModeProvider>
+        <App />
+      </SoftModeProvider>
+    </BrowserRouter>
   </StrictMode>
 )

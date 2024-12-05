@@ -1,7 +1,7 @@
 import { FaLinkedin } from "react-icons/fa6";
 export default function LinkedIn(){
     return(
-        <span className="cursor-pointer flex m-auto text-[#F8FAFC] hover:text-slate-500 dark:hover:text-slate-300"
+        <span className={`text-[#2D3E50] dark:text-[#F5F8FA] cursor-pointer flex m-auto hover:text-slate-500 dark:hover:text-slate-300`}
             onClick={() => window.open("https://www.linkedin.com/in/ayoub-boudaoud-a08703180/")} 
         >
             <span className="sr-only">Ayoub Boudaoud's LinkedIn</span>

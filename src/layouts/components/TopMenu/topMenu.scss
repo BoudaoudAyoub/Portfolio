@@ -1,4 +1,18 @@
 .navbar{
-    position: relative;
     z-index: 100;
+}
+
+@keyframes ScrollDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(4);
+    }
+}
+
+.scrollDown {
+    animation: ScrollDown 0.3s ease-in-out forwards;
 }
