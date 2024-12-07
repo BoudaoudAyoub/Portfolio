@@ -1,5 +1,5 @@
 export default interface IService{
-    id: number,
+    id: string,
     title: string,
     description: string
 }

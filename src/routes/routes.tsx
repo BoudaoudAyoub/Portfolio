@@ -1,25 +1,13 @@
-import Home from '../pages/Home/home';
 import { Route, Routes } from 'react-router-dom';
-import Services from '../pages/Services/services';
-
+import pages from './pages';
 export default function MainRouting() {  
   return (
     <Routes> 
-      <Route
-        path=''
-        element={<Home />}/> 
-      <Route
-        path='/services'
-        element={<Services />}/> 
-      <Route
-        path='/resume'
-        element={'resume'}/> 
-      <Route
-        path='/work'
-        element={'work'}/> 
-      <Route
-        path='/contact'
-        element={'contact'}/> 
+      <Route path='' element={<pages.Home />}/> 
+      <Route path='/services' element={<pages.Services />}/> 
+      <Route path='/resume' element={<pages.Resume />}/>
+      <Route path='/work' element={'work'}/> 
+      <Route path='/contact' element={'contact'}/> 
     </Routes>
   );
 };

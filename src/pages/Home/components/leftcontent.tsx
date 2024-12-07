@@ -9,7 +9,7 @@ export default function LeftHomeContent(){
             </h1>
             <span className="text-xl dark:text-[#F5F8FA]">
                 <Typewriter
-                    words={["Software Engineer"]}
+                    words={["Software Engineer | High Quality Code"]}
                     loop={0}
                     cursor
                     cursorStyle="|"
