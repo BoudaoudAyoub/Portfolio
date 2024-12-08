@@ -5,12 +5,12 @@ import { Box } from "@mui/material";
 const MainContainer: React.FC = () => {
   
     return (
-        <React.Fragment>
-            <Box className="mx-auto max-w-full">
+        <>
+            <Box className="mx-auto max-w-full mb-5">
                 <TopMenu />
                 <MainRouting />
             </Box>
-       </React.Fragment>
+       </>
     );
 };
  

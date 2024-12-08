@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import './resume.scss'
 import { ScrollArea } from '@radix-ui/react-scroll-area';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@radix-ui/react-tabs';
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@radix-ui/react-tooltip';
 import { useState } from 'react';
 import AboutMe from './components/aboutMe';
 import Education from './components/education';
@@ -27,7 +26,8 @@ export default function Resume() {
         }
     }
     return(
-        <div className="h-full px-8 xl:px-28">
+        <div className="h-full px-8 xl:px-28"
+                style={{ marginBottom: "100px" }}>
             <motion.div
                 initial={{opacity: 0}}
                 animate={{
@@ -36,7 +36,7 @@ export default function Resume() {
                 }}
                 className='min-h-[80vh] flex items-center justify-center xl:px-0 py-12'
             >
-                <div className={`w-full h-full ${scrollX <= 1000 ? 'flow' : ''}`}>
+                <div className={`w-full h-screen ${scrollX <= 1000 ? 'flow' : ''}`}>
                     <Tabs 
                         defaultValue={currentTab.title} 
                         onValueChange={(value) => {
@@ -51,7 +51,7 @@ export default function Resume() {
                                     key={index}
                                     value={item.title}
                                     className={`inline-flex items-center w-full bg-[#D3D8DA] 
-                                                dark:bg-[#2D3E50] text-[#393F4D] dark:text-[#F5F8FA]
+                                                dark:bg-[#2D3E50] text-[#0B0E18] dark:text-[#F5F8FA]
                                                 data-[state=active]:bg-[#348C79] data-[state=active]:text-[#F5F8FA]
                                                 justify-center whitespace-nowrap text-white rounded-[2px] 
                                                 p-3 text-balance front-medium ring-offset-white transition-all
@@ -72,12 +72,15 @@ export default function Resume() {
                                         opacity: 1,
                                         transition: { delay: 0.5, duration: 0.2, ease: "easeIn" }
                                     }}
+                                    style={{height: '50vh'}}
                                 >
                                     <span className="block text-center xl:text-left py-5 xl:p-0">
                                         <h3 className='text-4xl text-[#2D3E50] dark:text-[#F5F8FA] font-bold'>{currentTab.displayName}</h3>
                                         <p className='text-sm text-[#2D3E50] dark:text-[#F5F8FA] py-4'>{currentTab.description}</p>
                                     </span>
-                                    {GetComponent()}
+                                    <ScrollArea className='h-[200px]'>
+                                        {GetComponent()}
+                                    </ScrollArea>
                                 </ motion.div>   
                             </TabsContent> 
                         </div>

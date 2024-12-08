@@ -11,8 +11,8 @@ export default function TopMenu() {
     const { Width, ScrollY } = useScreenSize();
 
     return (
-        <Disclosure as="nav" className={`${ScrollY > 200 ? 'fixed scrollDown bg-[#F5F8FA] shadow-lg dark:bg-[#2D3E50]' : 'relative banner-fade-out'} w-full dark:border-gray-800 navbar`}>
-            <div className={`${ScrollY > 200 ? "py-1" : "py-3"} px-8 xl:px-28`}>
+        <Disclosure as="nav" className={`${ScrollY > 350 ? 'fixed scrollDown bg-[#F5F8FA] shadow-lg dark:bg-[#2D3E50]' : 'relative banner-fade-out'} w-full dark:border-gray-800 navbar`}>
+            <div className={`${ScrollY > 350 ? "py-1" : "py-3"} px-8 xl:px-28`}>
                 <div className="relative flex h-16 items-center justify-between">
                     {Width <= 799 && (
                         <div className="absolute inset-y-0 right-0 flex items-center">
