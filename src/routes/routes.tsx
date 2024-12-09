@@ -6,8 +6,8 @@ export default function MainRouting() {
       <Route path='' element={<pages.Home />}/> 
       <Route path='/services' element={<pages.Services />}/> 
       <Route path='/resume' element={<pages.Resume />}/>
-      <Route path='/work' element={'work'}/> 
-      <Route path='/contact' element={'contact'}/> 
+      <Route path='/work' element={<pages.Works />}/> 
+      <Route path='/contact' element={<pages.Contact />}/> 
     </Routes>
   );
 };

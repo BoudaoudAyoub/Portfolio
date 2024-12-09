@@ -1,34 +1,10 @@
 "use client";
 import { motion } from 'framer-motion';
-import IService from "./components/IService";
+import dataset from "./components/dataset";
 import { Box } from '@mui/material';
 import React from 'react';
 
 export default function Services() {
-
-    const services: IService[] = [
-        {
-            id: '01',
-            title: "Web development",
-            description: "Motivated and results-driven Business School graduate seeking a challenging position within a large organisation as a Business Analyst or Project Manager."
-        },
-        {
-            id: '02',
-            title: "Mobile development",
-            description: "Motivated and results-driven Business School graduate seeking a challenging position within a large organisation as a Business Analyst or Project Manager."        
-        },
-        {
-            id: '03',
-            title: "Design UX UI",
-            description: "Motivated and results-driven Business School graduate seeking a challenging position within a large organisation as a Business Analyst or Project Manager."        
-        },
-        {
-            id: '04',
-            title: "Reporting",
-            description: "Motivated and results-driven Business School graduate seeking a challenging position within a large organisation as a Business Analyst or Project Manager."        
-        }
-    ]
-
     return (
         <div className="h-full px-8 xl:px-28">
             <div className="mb-5">
@@ -36,7 +12,7 @@ export default function Services() {
                     <div className='text-[23px] dark:text-[#fff]'>Discover the services I offer.</div>
                 </Box>
                 <div className='grid grid-col-1 md:grid-cols-2 gap-[40px]'>
-                    {services.map((item, index) => {
+                    {dataset.services.map((item, index) => {
                         const [ isHover, setIsHover ] = React.useState(false);
                         return(
                             <motion.div

@@ -1,7 +1,6 @@
 "use client";
 import dataset, { IHeader } from './dataset';
 import { motion } from 'framer-motion';
-import './resume.scss'
 import { ScrollArea } from '@radix-ui/react-scroll-area';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@radix-ui/react-tabs';
 import { useState } from 'react';
@@ -26,8 +25,7 @@ export default function Resume() {
         }
     }
     return(
-        <div className="h-full px-8 xl:px-28"
-                style={{ marginBottom: "100px" }}>
+        <div className="px-8 xl:px-28" style={{height: `${currentTab.h}vh`}}>
             <motion.div
                 initial={{opacity: 0}}
                 animate={{
@@ -51,9 +49,9 @@ export default function Resume() {
                                     key={index}
                                     value={item.title}
                                     className={`inline-flex items-center w-full bg-[#D3D8DA] 
-                                                dark:bg-[#2D3E50] text-[#0B0E18] dark:text-[#F5F8FA]
+                                                dark:bg-[#2D3E50] text-[#2D3E50] dark:text-[#F5F8FA]
                                                 data-[state=active]:bg-[#348C79] data-[state=active]:text-[#F5F8FA]
-                                                justify-center whitespace-nowrap text-white rounded-[2px] 
+                                                justify-center whitespace-nowrap rounded-[2px] 
                                                 p-3 text-balance front-medium ring-offset-white transition-all
                                                 disabled-pointer-events-none disabled:opacity-50 
                                                 data-[state=active]:dark:bg-[#6941C6] shadow-sm duration-300`}
