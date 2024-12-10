@@ -1,7 +1,6 @@
 import React from 'react';
 import useActiveLink from '../../../hooks/Actives/useActiveLink';
 import { useLocation } from 'react-router-dom';
-import { lightBlue } from '@mui/material/colors';
 
 export interface IMenuOptions {
     key: number;
