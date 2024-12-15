@@ -15,7 +15,7 @@ export default function Experience(){
                     >
                         <div className='w-[50px] h-[50px] p-1'>
                             {elm.logoUrl ? (
-                                <img src={`../../../public/imgs/${elm.logoUrl}`} />
+                                <img src={`imgs/${elm.logoUrl}`} />
                             ):(
                                 <FaRegBuilding className='w-[80%] h-[80%] m-auto text-gray-500' />
                             )}

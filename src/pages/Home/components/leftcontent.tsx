@@ -3,7 +3,7 @@ import download from "../../../actions/download";
 import { Typewriter } from 'react-simple-typewriter';
 export default function LeftHomeContent(){
     return(
-        <div className="text-center xl:text-left py-5 order-2 xl:order-none xl:w-[50%]">
+        <div className="text-center xl:text-left py-4 order-2 xl:order-none xl:w-[50%]">
             <h1 className="text-[30px] xl:text-[50px] leading-[1.1] font-semibold my-4">
                 <span className="dark:text-[#F5F8FA]">Hi, I'm</span> <br /><span className=" text-[#348C79] dark:text-[#6941C6]">Ayoub Boudaoud</span>
             </h1>
@@ -24,7 +24,7 @@ export default function LeftHomeContent(){
                 design scalable systems and optimize user experiences. With a focus on quality and innovation, 
                 I consistently deliver impactful digital solutions
             </p>
-            <div className="flex flex-col xl:flex-row items-center gap-8 mb-5">
+            <div className="flex flex-col xl:flex-row items-center gap-8">
                 <button
                     className="border border-[#348C79] dark:border-[#6941C6]  py-2 px-4 rounded-full uppercase flex items-center gap-2"
                     onClick={() => download("src/files/cvPDF/Ayoub.Boudaoud.pdf", "Ayoub.Boudaoud", 'pdf')}

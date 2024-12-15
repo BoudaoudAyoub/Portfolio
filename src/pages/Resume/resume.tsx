@@ -8,6 +8,7 @@ import AboutMe from './components/aboutMe';
 import Education from './components/education';
 import Experience from './components/experience';
 import Skills from './components/skills';
+import { Box } from '@mui/material';
 export default function Resume() {
     const [currentTab, setCurrentTab] = useState<IHeader>(dataset.headers[0]);
     const GetComponent = () => {
@@ -25,16 +26,18 @@ export default function Resume() {
         }
     }
     return(
-        <div className="px-8 xl:px-28" style={{height: `${currentTab.h}vh`}}>
+        <Box className="px-8 xl:px-28 h-full overflow-x-hidden" style={{
+            marginBottom: "4px"
+        }}>
             <motion.div
                 initial={{opacity: 0}}
                 animate={{
                     opacity: 1,
                     transition: { delay: 1, duration: 0.4, ease: "easeIn" }
                 }}
-                className='min-h-[80vh] flex items-center justify-center xl:px-0 py-12'
+                className='flex items-center justify-center xl:px-0 py-12'
             >
-                <div className={`w-full h-screen ${scrollX <= 1000 ? 'flow' : ''}`}>
+                <div className={`w-full h-full ${scrollX <= 1000 ? 'flow' : ''}`}>
                     <Tabs 
                         defaultValue={currentTab.title} 
                         onValueChange={(value) => {
@@ -60,7 +63,7 @@ export default function Resume() {
                                 </TabsTrigger>
                             ))}
                         </TabsList>
-                        <div className='w-full h-[70vh] px-12'>
+                        <div className='w-full h-[100%] px-12'>
                             <TabsContent value={currentTab.title}
                                         className='w-full'
                             >
@@ -85,6 +88,6 @@ export default function Resume() {
                     </Tabs>
                 </div>
             </motion.div>
-        </div>
+        </Box>
     )
 }

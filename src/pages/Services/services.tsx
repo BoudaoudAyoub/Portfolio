@@ -6,10 +6,10 @@ import React from 'react';
 
 export default function Services() {
     return (
-        <div className="h-full px-8 xl:px-28">
+        <Box className="px-8 xl:px-28 h-full overflow-x-hidden">
             <div className="mb-5">
                 <Box className="flex mb-[20px] h-[28px] justify-between items-center">
-                    <div className='text-[23px] dark:text-[#fff]'>Discover the services I offer.</div>
+                    {/* <div className='text-[23px] dark:text-[#fff]'>Discover the services I offer.</div> */}
                 </Box>
                 <div className='grid grid-col-1 md:grid-cols-2 gap-[40px]'>
                     {dataset.services.map((item, index) => {
@@ -35,6 +35,6 @@ export default function Services() {
                     })}
                 </div>
             </div>
-        </div>
+        </Box>
     );
 }

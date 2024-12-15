@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+div.app {
+    position: relative;
+    top: var(--global-nav-height);
+    overflow-y: auto;   
+    height: calc(100vh - var(--global-nav-height)) !important;
+    overflow-x: hidden;
+}
+body.sticky-global-toolbar{
+    height: 100vh;
+}
+
+div.child-height {
+    --global-nav-height: 83px;
+}

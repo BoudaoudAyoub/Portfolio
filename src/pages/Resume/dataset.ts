@@ -6,7 +6,6 @@ export interface IHeader{
     title: string,
     displayName: string,
     description: string,
-    h: number
 }
 
 const headers: IHeader[] = [
@@ -14,25 +13,21 @@ const headers: IHeader[] = [
         title: 'Experience',
         displayName: 'Professional Experience',
         description: "Explore my journey through various roles and companies, where I’ve progressed from jurnior developer to backend engineer to team leadership. This section highlights the different positions I’ve held, the experiences gained in each that demonstrates my growth and adaptability across diverse environments and teams.",
-        h: 0
     },
     {
         title: 'Education',
         displayName: 'Education & Degrees',
         description: "Discover the academic journey that shaped me into a skilled software engineer. Here, I share my degrees, certifications, and ongoing learning efforts, showcasing my commitment to professional growth and staying ahead in an ever-evolving industry.",
-        h: 180
     },
     {
         title: 'Skills',
         displayName: 'My Skills',
         description: "I leverage a diverse range of technologies and tools to design and deliver scalable, efficient, and high-performing solutions. From modern development frameworks to robust architectural patterns, each skill plays a vital role in ensuring the success of my projects. The sections below provide an overview of the key technologies and methodologies that drive my approach to software engineering, reflecting a commitment to innovation, quality, and continuous improvement.",
-        h: 250
     },
     {
         title: 'About Me',
         displayName: 'About Me',
         description: "I am an experienced .NET software developer with over three years of expertise delivering innovative solutions for international companies. Specializing in backend development and leadership, I am passionate about creating high-quality, scalable software in agile environments. My goal is to continue growing while contributing to impactful, high-performance software solutions.",
-        h: 0
     }
 ];
 

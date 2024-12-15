@@ -5,7 +5,7 @@ export default function RightHomeContent(){
     const { isSoftMode } = useSoftMode();
     return(
         <div className="order-1 xl:order-none">
-            <div className="w-full h-full xl:w-[450px] relative">
+            <div className="w-full xl:w-[450px] relative">
                 <motion.div
                     initial={{opacity: 0}}
                     animate={{
@@ -15,7 +15,7 @@ export default function RightHomeContent(){
                 >
                     <div className="mt-[28px] xl:mt-0 flex w-[350px] h-[350x] xl:w-full xl:h-full absolute">
                         <img
-                            src="http://localhost:5173/src/assets/me.png"
+                            src="/imgs/me.png"
                             alt="Ayoub Boudaoud"
                             className="object-contain m-auto rounded-full"
                         />

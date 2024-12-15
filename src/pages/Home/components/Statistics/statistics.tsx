@@ -18,7 +18,7 @@ export const Statistics = () => {
     ]
 
     return(
-        <div className="flex flex-wrap gap-6 max-w-[88vm] mx-auto xl:max-w-none mb-5">
+        <div className="flex flex-wrap gap-6 max-w-[88vm] mx-auto xl:w-full">
             {stats.map((item, index) => {
                 return(
                     <div className={`flex-1 flex gap-3 items-center justify-center 

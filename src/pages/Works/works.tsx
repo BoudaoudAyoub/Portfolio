@@ -1,7 +1,9 @@
+import { Box } from "@mui/material";
+
 export default function Works() {
     return(
-        <div className="h-full px-8 xl:px-28">
+        <Box className="px-8 xl:px-28 h-full overflow-x-hidden">
             works
-        </div>
+        </Box>
     )
 }

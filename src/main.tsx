@@ -1,13 +1,13 @@
 import './index.css'
 import App from './App.tsx'
-import { StrictMode } from 'react'
+import React from 'react'
 import { createRoot } from 'react-dom/client'
 import { SoftModeProvider } from './contexts/SoftMode/SoftModeContextProvider.tsx'
 import { BrowserRouter } from 'react-router-dom'
 import { TooltipProvider } from '@radix-ui/react-tooltip'
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
+createRoot(document.getElementById('__elm')!).render(
+  <React.StrictMode>
     <BrowserRouter>
       <SoftModeProvider>
         <TooltipProvider>
@@ -15,5 +15,5 @@ createRoot(document.getElementById('root')!).render(
         </TooltipProvider>
       </SoftModeProvider>
     </BrowserRouter>
-  </StrictMode>
+  </React.StrictMode>
 )
