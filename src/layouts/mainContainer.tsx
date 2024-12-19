@@ -5,7 +5,7 @@ const MainContainer: React.FC = () => {
     return (
         <div className="h-full">
             <TopMenu />
-            <div className={`app w-full h-full child-height`} >
+            <div className={`app w-full h-full`} > {/*child-height*/}
                 <div className={`w-full h-full inline-table`} >
                     <MainRouting />
                 </div>
