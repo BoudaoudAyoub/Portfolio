@@ -27,8 +27,8 @@ export default function Services() {
                                 onMouseEnter={() => setIsHover(true)}
                                 onMouseLeave={() => setIsHover(false)}
                             >
-                                <div className={`text-[#2D3E50] text-[28px] font-bold ${isHover ? 'text-[#348C79] dark:text-[#6941C6]' : 'dark:text-[#F5F8FA]'}`}>{item.id}. </div>
-                                <div className={`text-[#2D3E50] text-[28px] font-bold ${isHover ? 'text-[#348C79] dark:text-[#6941C6]' : 'dark:text-[#F5F8FA]'}`}>{item.title}</div>
+                                <div className={`text-[#2D3E50] text-[28px] font-bold ${isHover ? 'text-[#348C79] dark:text-[#6941C6] transition-all duration-500 ease-in-out' : 'dark:text-[#F5F8FA]'}`}>{item.id}. </div>
+                                <div className={`text-[#2D3E50] text-[28px] font-bold ${isHover ? 'text-[#348C79] dark:text-[#6941C6] transition-all duration-500 ease-in-out' : 'dark:text-[#F5F8FA]'}`}>{item.title}</div>
                                 <div className='text-[#2D3E50] text-[15px] dark:text-[#F5F8FA]'>{item.description}</div>
                             </motion.div>
                         )

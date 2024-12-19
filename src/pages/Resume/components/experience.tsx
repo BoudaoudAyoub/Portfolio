@@ -6,7 +6,7 @@ export default function Experience(){
             return(
                 <ul>
                     {index > 0 && (
-                        <span className={`flex w-[91%] ml-auto border-b-[1px]  ${index == 1 ? 'mt-0' : 'mt-5'} mb-5 border-gray-300 dark:border-gray-600`}></span>
+                        <span className={`flex w-[89%] ml-auto mr-[10px] border-b-[1px]  ${index == 1 ? 'mt-0' : 'mt-5'} mb-5 border-gray-300 dark:border-gray-600`}></span>
                     )}
                     <div className={`flex`} key={index}
                         style={{

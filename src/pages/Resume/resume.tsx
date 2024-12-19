@@ -66,19 +66,20 @@ export default function Resume() {
                         <div className='w-full h-[100%] px-12'>
                             <TabsContent value={currentTab.title}
                                         className='w-full'
-                            >
+                            >                                
+                                <span className="block text-center xl:text-left py-5 xl:p-0 mb-5">
+                                    <h3 className='text-4xl text-[#2D3E50] dark:text-[#F5F8FA] font-bold'>{currentTab.displayName}</h3>
+                                    <p className='text-sm text-[#2D3E50] dark:text-[#F5F8FA] py-4'>{currentTab.description}</p>
+                                </span>
                                 <motion.div
                                     initial={{opacity: 0}}
                                     animate={{
                                         opacity: 1,
                                         transition: { delay: 0.5, duration: 0.2, ease: "easeIn" }
                                     }}
-                                    style={{height: '50vh'}}
-                                >
-                                    <span className="block text-center xl:text-left py-5 xl:p-0">
-                                        <h3 className='text-4xl text-[#2D3E50] dark:text-[#F5F8FA] font-bold'>{currentTab.displayName}</h3>
-                                        <p className='text-sm text-[#2D3E50] dark:text-[#F5F8FA] py-4'>{currentTab.description}</p>
-                                    </span>
+                                    style={{height: '70vh', overflowY: currentTab.title != dataset.headers[3].title ? "scroll" : "hidden"}}
+                                    className="custom-scrollbar"
+                                >   
                                     <ScrollArea className='h-[200px]'>
                                         {GetComponent()}
                                     </ScrollArea>

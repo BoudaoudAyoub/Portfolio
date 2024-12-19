@@ -5,9 +5,9 @@ export default function Skills(){
         dataset.skills.map((elm, index) => {
             return(
                 <>
-                    {index > 0 && (
-                        <span className={`flex ml-auto border-b-[1px] my-5 border-gray-300 dark:border-gray-600`}></span>
-                    )}                
+                    {/* {index > 0 && (
+                        <span className={`flex ml-auto mr-[10px] border-b-[1px] my-5 border-gray-300 dark:border-gray-600`}></span>
+                    )}                 */}
                     <div key={index} className={`block mb-4 ${index === dataset.skills.length - 1 ? 'mb-5' : ''}`}>
                         <div className='pb-3 text-[13px] font-bold text-[#2D3E50] dark:text-[#F5F8FA]'><span>{elm.category}</span></div>
                         <div className='grid grid-cols-3 md:grid-cols-5 xl:grid-cols-5 gap-3'>

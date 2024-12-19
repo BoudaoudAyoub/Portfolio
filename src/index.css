@@ -16,3 +16,32 @@ body.sticky-global-toolbar{
 div.child-height {
     --global-nav-height: 83px;
 }
+
+/* Customizing scrollbars for elements with the class 'custom-scrollbar' */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+    height: 100%;
+}
+
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb,
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #348C79;
+}
+
+body:is(.dark) .custom-scrollbar::-webkit-scrollbar-thumb,
+body:is(.dark) .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #6941C6;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+body:is(.dark) .custom-scrollbar::-webkit-scrollbar-track {
+    background: #2C3D4F;
+}
