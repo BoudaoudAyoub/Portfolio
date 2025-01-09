@@ -1,6 +1,7 @@
 import React from 'react';
 import useActiveLink from '../../../hooks/Actives/useActiveLink';
 import { useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 export interface IMenuOptions {
     key: number;
@@ -16,12 +17,13 @@ function classNames(...classes: string[]) {
 
 export default function Nav() {
     const l = useLocation();
+    const { t } = useTranslation();
     const options: IMenuOptions[] = [
-        { key: 1, name: "Home", link: "home", isActive: true, path: "/" },
-        { key: 2, name: "Services", link: "education", isActive: false, path: "/services" },
-        { key: 3, name: "Resume", link: "experience", isActive: false, path: "/resume" },
-        { key: 4, name: "Work", link: "projects", isActive: false, path: "/work" },
-        { key: 5, name: "Contact", link: "contact", isActive: false, path: "/contact" },
+        { key: 1, name: "home", link: "home", isActive: true, path: "/" },
+        { key: 2, name: "services", link: "education", isActive: false, path: "/services" },
+        { key: 3, name: "resume", link: "experience", isActive: false, path: "/resume" },
+        { key: 4, name: "work", link: "projects", isActive: false, path: "/work" },
+        { key: 5, name: "contact", link: "contact", isActive: false, path: "/contact" },
     ];
 
     const { activeLink, handleActiveChange } = useActiveLink(options);
@@ -53,7 +55,7 @@ export default function Nav() {
                         "cursor-pointer select-none rounded-md px-3 py-2 text-sm font-medium"
                     )}
                 >
-                    {item.name}
+                    {t(`${item.name}`)}
                 </span>
             )}
         </>

@@ -1,19 +1,24 @@
 import CountUp from 'react-countup';
 import IStatistics from "./IStatistics";
+import { useTranslation } from 'react-i18next';
 export const Statistics = () => {
-
+    const { t } = useTranslation();
     const stats: IStatistics[] = [
         {
            num: 5,
-           name: "Years of expérience" 
+           name: t(`homeContent.statistics.years`)
         },
         {
-            num: 8,
-            name: "Technologies mastred" 
+            num: 5,
+            name: t(`homeContent.statistics.techs`)
         },
         {
-            num: 300,
-            name: "Code commits" 
+            num: 7,
+            name: t(`homeContent.statistics.servs`)
+        },
+        {
+            num: 500,
+            name: t(`homeContent.statistics.code`)
         }
     ]
 
@@ -25,6 +30,7 @@ export const Statistics = () => {
                         ${index === 0 ? 'xl:justify-start' : index === stats.length - 1 ? 'xl:justify-end' : ''} text-[18px] text-[#1A3235] dark:text-[#F3F6FE]`} 
                         key={index}
                     >
+                        <p className={`xl:max-w-[100%] leading-snug`}>+</p>
                         <CountUp 
                             end={item.num}
                             duration={5}

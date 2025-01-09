@@ -1,3 +1,23 @@
 {
-    "home": "Home"
+    "home": "Home",
+    "services": "Services",
+    "resume": "Resume",
+    "work": "Works",
+    "contact": "Contact",
+    "homeContent":{
+        "title1": "Hi, I'm",
+        "devTitles":{
+            "t1": "Software Enginner",
+            "t2": ".NET Developer"
+        },
+        "resume": "I bring expertise in crafting innovative solutions through a strong command of diverse programming languages and modern technologies. My skill set enables me to design scalable systems and optimize user experiences. With a focus on quality and innovation, I consistently deliver impactful digital solutions",
+        "downloadcv": "Download Cv",
+        "statistics": {
+            "years": "Years of expérience",
+            "techs": "Technologies mastred",
+            "servs": "Provided Services",
+            "code": "Code commits"
+        }
+    }
+    
 }

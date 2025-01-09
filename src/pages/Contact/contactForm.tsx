@@ -34,7 +34,7 @@ export default function ContactForm() {
 
     return(
         <form className="w-full mt-" onSubmit={onSubmit}>
-            <div className="flex flex-wrap -mx-3 mb-4">
+            <div className="flex flex-wrap -mx-3 mb-5">
                 <div className="w-full md:w-1/2 px-3 grid grid-rows-1 gap-2">
                     <div className="w-full md:w-1/2">
                         {values.firstname && (
@@ -77,11 +77,11 @@ export default function ContactForm() {
                     />
                 </div>
             </div>
-            <div className="block -mx-3 mb-4">
+            <div className="block -mx-3 mb-6">
                 <div className="flex flex-wrap">
                     <div className="w-full px-3">
                         {values.email && (
-                            <div className="w-full md:w-1/2 mb-4">                                        
+                            <div className="w-full md:w-1/2 mb-2">                                        
                                 <p className="text-[11px] fade-in dark:text-[#F5F6F7]">
                                     Email
                                 </p>
@@ -100,7 +100,7 @@ export default function ContactForm() {
                     </div>
                 </div>
             </div>                    
-            <div className="flex flex-wrap -mx-3 mb-4">
+            <div className="flex flex-wrap -mx-3 mb-6">
                 <div className="w-full px-3">
                     {values.phone && (
                         <div className="w-full md:w-1/2 pb-2">
@@ -121,7 +121,7 @@ export default function ContactForm() {
                     />
                 </div>
             </div>
-            <div className="flex flex-wrap -mx-3 mb-3">
+            <div className="flex flex-wrap -mx-3 mb-6">
                 <div className="w-full px-3">
                     {values.service && (
                         <div className="w-full md:w-1/2 pb-2">
@@ -156,7 +156,7 @@ export default function ContactForm() {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-wrap -mx-3 mb-4">
+            <div className="flex flex-wrap -mx-3 mb-6">
                 <div className="w-full px-3">
                     <div className="w-full md:w-1/2 pb-2">
                         {values.message && (

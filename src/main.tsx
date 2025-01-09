@@ -1,19 +1,23 @@
 import './index.css'
+import React from 'react';
 import App from './App.tsx'
-import React from 'react'
+import i18n from './locales/i18n.tsx';
 import { createRoot } from 'react-dom/client'
-import { SoftModeProvider } from './contexts/SoftMode/SoftModeContextProvider.tsx'
-import { BrowserRouter } from 'react-router-dom'
-import { TooltipProvider } from '@radix-ui/react-tooltip'
+import { I18nextProvider } from 'react-i18next';
+import { BrowserRouter } from 'react-router-dom';
+import { TooltipProvider } from '@radix-ui/react-tooltip';
+import { SoftModeProvider } from './contexts/SoftMode/SoftModeContextProvider.tsx';
 
 createRoot(document.getElementById('__elm')!).render(
   <React.StrictMode>
     <BrowserRouter>
-      <SoftModeProvider>
-        <TooltipProvider>
-          <App />
-        </TooltipProvider>
-      </SoftModeProvider>
+      <I18nextProvider i18n={i18n}>
+        <SoftModeProvider>
+          <TooltipProvider>
+            <App />
+          </TooltipProvider>
+        </SoftModeProvider>
+      </I18nextProvider>
     </BrowserRouter>
   </React.StrictMode>
 )

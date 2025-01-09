@@ -23,7 +23,7 @@ export default function Services() {
                                     duration: 0.4,
                                     ease: "easeIn"
                                 }}}
-                                className='cursor-pointer border hover:border-[#348C79] hover:dark:border-[#6941C6] p-6 flex-1 flex flex-col justify-center gap-1 group transition-all duration-500'
+                                className='cursor-pointer border border-gray-300 hover:border-[#348C79] hover:dark:border-[#6941C6] p-6 flex-1 flex flex-col justify-center gap-1 group transition-all duration-500'
                                 onMouseEnter={() => setIsHover(true)}
                                 onMouseLeave={() => setIsHover(false)}
                             >

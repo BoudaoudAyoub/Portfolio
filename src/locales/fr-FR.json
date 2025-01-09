@@ -1,3 +1,22 @@
 {
-    "home": "Accueill"
+    "home": "Accueil",
+    "services": "Services",
+    "resume": "Curriculum Vitae",
+    "work": "Travaux",
+    "contact": "Contact",
+    "homeContent": {
+        "title1": "Salut, je suis",
+        "devTitles": {
+            "t1": "Ingénieur Logiciel",
+            "t2": "Développeur .NET"
+        },
+        "resume": "J'apporte une expertise dans la conception de solutions innovantes grâce à une maîtrise approfondie de divers langages de programmation et technologies modernes. Mon ensemble de compétences me permet de concevoir des systèmes évolutifs et d'optimiser les expériences utilisateur. Avec un souci constant de qualité et d'innovation, je livre régulièrement des solutions numériques impactantes.",
+        "downloadcv": "Télécharger le CV",
+        "statistics": {
+            "years": "Années d'expérience",
+            "techs": "Technologies maîtrisées",
+            "servs": "Services proposés",
+            "code": "Commits de code"
+        }
+    }
 }

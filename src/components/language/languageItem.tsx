@@ -1,19 +1,30 @@
 import ILanguageItem from "./ILanguageItem";
-
+import i18n from 'i18next';
 export default interface ILanguageItemProps {
     language: ILanguageItem;
-    handleLanguageChange: (value: string) => void
+    currentLanguage: ILanguageItem;
 }
 
-export const LanguageItem: React.FC<ILanguageItemProps> = ({ language, handleLanguageChange }) => {
+export const LanguageItem: React.FC<ILanguageItemProps> = ({ language, currentLanguage }) => {
+
+    const handleLanguageChange = (lng: string) => {
+        i18n.changeLanguage(lng)
+            .then(() => {
+                window.location.reload();
+            })
+            .catch((error) => {
+                console.error('Error changing language:', error);
+            });
+    };    
+
     return(
         <div className="py-2 flex w-full items-center cursor-pointer text-[14px] hover:text-sky-500 dark:hover:text-sky-400"            
-            key={language.key}
+            key={language.key}            
+            onClick={() => handleLanguageChange(language.name)}
         >
             <div 
                 key={language.key}
                 className={`dark:text-slate-500`}
-                onClick={() => handleLanguageChange(language.name)}
                 style={{
                     display:"flex",
                     alignItems:"center"
