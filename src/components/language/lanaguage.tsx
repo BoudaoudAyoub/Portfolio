@@ -55,7 +55,6 @@ export default function Language() {
                         {Languages.map(item => 
                             <LanguageItem 
                                 language={item}
-                                currentLanguage={currentLanguage}
                             />
                         )}
                     </Box>

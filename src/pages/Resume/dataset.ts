@@ -230,6 +230,12 @@ const skills:Skills[] = [
                 isImg: false,
                 imge: '',
                 name: 'Tillwind Css'
+            },            
+            {
+                icon: skillsIcons.FaAngular, 
+                isImg: false,
+                imge: '',
+                name: 'Angular'
             },
         ]         
     },

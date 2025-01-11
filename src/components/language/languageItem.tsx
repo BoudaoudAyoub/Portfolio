@@ -2,10 +2,9 @@ import ILanguageItem from "./ILanguageItem";
 import i18n from 'i18next';
 export default interface ILanguageItemProps {
     language: ILanguageItem;
-    currentLanguage: ILanguageItem;
 }
 
-export const LanguageItem: React.FC<ILanguageItemProps> = ({ language, currentLanguage }) => {
+export const LanguageItem: React.FC<ILanguageItemProps> = ({ language }) => {
 
     const handleLanguageChange = (lng: string) => {
         i18n.changeLanguage(lng)

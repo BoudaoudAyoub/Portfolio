@@ -20,6 +20,7 @@ import { VscAzureDevops } from "react-icons/vsc";
 import { LuRefreshCw } from "react-icons/lu";
 import { DiScrum } from "react-icons/di";
 import { FaUnity } from "react-icons/fa";
+import { FaAngular } from "react-icons/fa";
 
 export default {
     //langs
@@ -30,6 +31,7 @@ export default {
     //frames
     SiDotnet,
     FaReact,
+    FaAngular,
     SiBlazor,
     FaCode,
     SiTailwindcss,
