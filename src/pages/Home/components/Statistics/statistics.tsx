@@ -13,7 +13,7 @@ export const Statistics = () => {
             name: t(`homeContent.statistics.techs`)
         },
         {
-            num: 7,
+            num: 6,
             name: t(`homeContent.statistics.servs`)
         },
         {

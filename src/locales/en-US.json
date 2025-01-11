@@ -2,7 +2,7 @@
     "home": "Home",
     "services": "Services",
     "resume": "Resume",
-    "work": "Works",
+    "work": "Work",
     "contact": "Contact",
     "homeContent":{
         "title1": "Hi, I'm",
@@ -18,6 +18,73 @@
             "servs": "Provided Services",
             "code": "Code commits"
         }
+    },
+    "servicesTexts":{
+        "dev":{
+            "head": "Development",
+            "text": "I focus on writing clean, maintainable code by consistently adhering to best practices and applying appropriate design patterns when necessary. My goal is to deliver solutions that prioritize optimal maintainability, readability, testability, simplicity, and consistency, ensuring high-quality code that stands the test of time"
+        },
+        "perform":{
+            "head": "Performance Opetimization",
+            "text": "I specialize in identifying performance issues and optimizing system efficiency. By conducting targeted and meaningful benchmark tests, I am able to refactor code or redesign functionality to achieve optimal performance, ensuring smooth and responsive systems"
+        },
+        "team":{
+            "head": "Team Management",
+            "text": "I lead or contribute to teams dedicated to achieving these goals. By fostering a collaborative and supportive environment, I ensure that all team members are aligned on best practices, empowering them to produce high-quality, sustainable code while driving a shared commitment to excellence"
+        },
+        "codeReview":{
+            "head": "Code Reviewing",
+            "text": "I conduct thorough examinations and evaluations of software application source code to identify potential issues, enhance its quality, and ensure it aligns with specified requirements and industry best practices"
+        },
+        "devops":{
+            "head": "Devops",
+            "text": "I collaborate in strategizing and implementing automated CI/CD pipelines, leading to increased productivity and reduced downtime"
+        },
+        "architect":{
+            "head": "Architecture Design",
+            "text": "I take the lead in architectural design, identifying the most suitable architecture for the system. Throughout the design process, I also present alternative architectural options to the customer, highlighting their pros and cons for informed decision-making and discussion"
+        }
+    },
+    "inProgress":{
+        "t1": "Under construction",
+        "t2": "We're Crafting Something Special!",
+        "t3": "The Page Will Be Live Soon.",
+        "btn": "Back to home"
+    },
+    "cv":{
+        "experience":{
+            "title": "Professional Experience",
+            "text": "Explore my journey through various roles and companies, where I’ve progressed from jurnior developer to backend engineer to team leadership. This section highlights the different positions I’ve held, the experiences gained in each that demonstrates my growth and adaptability across diverse environments and teams."
+        },
+        "education":{
+            "title": "Education & Degrees",
+            "text": "Discover the academic journey that shaped me into a skilled software engineer. Here, I share my degrees, certifications, and ongoing learning efforts, showcasing my commitment to professional growth and staying ahead in an ever-evolving industry."    
+        }  ,
+        "skills":{
+            "title": "My Skills",
+            "text": "I leverage a diverse range of technologies and tools to design and deliver scalable, efficient, and high-performing solutions. From modern development frameworks to robust architectural patterns, each skill plays a vital role in ensuring the success of my projects. The sections below provide an overview of the key technologies and methodologies that drive my approach to software engineering, reflecting a commitment to innovation, quality, and continuous improvement."    
+        }  ,
+        "about":{
+            "title": "About Me",
+            "text": "I am an experienced .NET software developer with over three years of expertise delivering innovative solutions for international companies. Specializing in backend development and leadership, I am passionate about creating high-quality, scalable software in agile environments. My goal is to continue growing while contributing to impactful, high-performance software solutions.",    
+            "fullname": "Fullname",
+            "phone": "Phone",
+            "adr": "Mail Address",
+            "exp": "Experience",
+            "nation": "Nationality",
+            "lang": "Languages"
+        }   
+    },
+    "contactForm":{
+        "head": "Contact",
+        "text": "Would you like to collaborate on your project? Share as much detail as possible, and I’ll get back to you promptly to discuss your ideas and, if you wish, arrange a no-obligation consultation",
+        "firstname": "Firstname",
+        "lastname": "Lastname",
+        "mail": "Email Address",
+        "phone": "Phone Number",
+        "serv": "Service",
+        "type": "Type your message here",
+        "btn": "Sent the message"
     }
     
 }

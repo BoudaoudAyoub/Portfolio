@@ -3,8 +3,12 @@ import { motion } from 'framer-motion';
 import dataset from "./components/dataset";
 import { Box } from '@mui/material';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 export default function Services() {
+
+    const { t } = useTranslation();
+
     return (
         <Box className="px-8 xl:px-28 h-full overflow-x-hidden">
             <div className="mb-5">
@@ -28,8 +32,10 @@ export default function Services() {
                                 onMouseLeave={() => setIsHover(false)}
                             >
                                 <div className={`text-[#2D3E50] text-[28px] font-bold ${isHover ? 'text-[#348C79] dark:text-[#6941C6] transition-all duration-500 ease-in-out' : 'dark:text-[#F5F8FA]'}`}>{item.id}. </div>
-                                <div className={`text-[#2D3E50] text-[28px] font-bold ${isHover ? 'text-[#348C79] dark:text-[#6941C6] transition-all duration-500 ease-in-out' : 'dark:text-[#F5F8FA]'}`}>{item.title}</div>
-                                <div className='text-[#2D3E50] text-[15px] dark:text-[#F5F8FA]'>{item.description}</div>
+                                <div className={`text-[#2D3E50] text-[28px] font-bold ${isHover ? 'text-[#348C79] dark:text-[#6941C6] transition-all duration-500 ease-in-out' : 'dark:text-[#F5F8FA]'}`}>{t(item.titleKey)}</div>
+                                <div className='text-[#2D3E50] text-[15px] dark:text-[#F5F8FA]'>
+                                    {t(item.descriptionKey)}
+                                </div>
                             </motion.div>
                         )
                     })}

@@ -9,7 +9,9 @@ import Education from './components/education';
 import Experience from './components/experience';
 import Skills from './components/skills';
 import { Box } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 export default function Resume() {
+    const { t } = useTranslation();
     const [currentTab, setCurrentTab] = useState<IHeader>(dataset.headers[0]);
     const GetComponent = () => {
         switch (currentTab.title) {
@@ -68,8 +70,8 @@ export default function Resume() {
                                         className='w-full'
                             >                                
                                 <span className="block text-center xl:text-left py-5 xl:p-0 mb-5">
-                                    <h3 className='text-4xl text-[#2D3E50] dark:text-[#F5F8FA] font-bold'>{currentTab.displayName}</h3>
-                                    <p className='text-sm text-[#2D3E50] dark:text-[#F5F8FA] py-4'>{currentTab.description}</p>
+                                    <h3 className='text-4xl text-[#2D3E50] dark:text-[#F5F8FA] font-bold'>{t(currentTab.nameKey)}</h3>
+                                    <p className='text-sm text-[#2D3E50] dark:text-[#F5F8FA] py-4'>{t(currentTab.descriptionKey)}</p>
                                 </span>
                                 <motion.div
                                     initial={{opacity: 0}}

@@ -1,9 +1,10 @@
 import React from "react";
 import { IoIosSend } from "react-icons/io";
 import useSoftMode from "../../hooks/SoftMode/useSoftMode";
+import { useTranslation } from "react-i18next";
 
 export default function ContactForm() {
-    
+    const { t } = useTranslation();
     const { isSoftMode } = useSoftMode();
     const [ values, setValue ] = React.useState({
         firstname: '',
@@ -39,7 +40,7 @@ export default function ContactForm() {
                     <div className="w-full md:w-1/2">
                         {values.firstname && (
                             <p className="text-[11px] fade-in dark:text-[#F5F6F7]">
-                                First Name
+                                {t('contactForm.firstname')}
                             </p>
                         )}
                     </div>
@@ -49,7 +50,7 @@ export default function ContactForm() {
                             id="grid-first-name" 
                             type="text"
                             value={values.firstname}
-                            placeholder="Firstname"
+                            placeholder={t('contactForm.firstname')}
                             autoComplete="false"
                             onChange={(v) => {
                                 onTyping(1)
@@ -61,7 +62,7 @@ export default function ContactForm() {
                     <div className="w-full md:w-1/2">
                         {values.lastname && (
                             <p className={`text-[11px] fade-in dark:text-[#F5F6F7] ${values.firstname && values.lastname}`}>
-                                Last Name
+                                {t('contactForm.lastname')}
                             </p>
                         )}
                     </div>
@@ -71,7 +72,7 @@ export default function ContactForm() {
                             id="grid-last-name" 
                             type="text" 
                             value={values.lastname}
-                            placeholder="Lastname"
+                            placeholder={t('contactForm.lastname')}
                             autoComplete="false"
                             onChange={(v) => setValue({...values, lastname: v.target.value})}
                     />
@@ -83,7 +84,7 @@ export default function ContactForm() {
                         {values.email && (
                             <div className="w-full md:w-1/2 mb-2">                                        
                                 <p className="text-[11px] fade-in dark:text-[#F5F6F7]">
-                                    Email
+                                    {t('contactForm.mail')}
                                 </p>
                             </div>
                         )}
@@ -93,7 +94,7 @@ export default function ContactForm() {
                                 id="email" 
                                 type="email"
                                 value={values.email}
-                                placeholder="Email Address"
+                                placeholder={t('contactForm.mail')}
                                 autoComplete="false"
                                 onChange={(v) => setValue({...values, email: v.target.value})}
                         />
@@ -105,7 +106,7 @@ export default function ContactForm() {
                     {values.phone && (
                         <div className="w-full md:w-1/2 pb-2">
                             <p className="text-[11px] fade-in  dark:text-[#F5F6F7]">
-                                Number Phone
+                                {t('contactForm.phone')}
                             </p>
                         </div>                            
                     )}
@@ -115,7 +116,7 @@ export default function ContactForm() {
                             id="phone" 
                             type="phone"
                             value={values.phone}
-                            placeholder="Phone Number"
+                            placeholder={t('contactForm.phone')}
                             autoComplete="false"
                             onChange={(v) => setValue({...values, phone: v.target.value})}
                     />
@@ -126,7 +127,7 @@ export default function ContactForm() {
                     {values.service && (
                         <div className="w-full md:w-1/2 pb-2">
                             <p className="text-[11px] fade-in dark:text-[#F5F6F7]">
-                                Service
+                                {t('contactForm.service')}
                             </p>
                         </div> 
                     )}
@@ -141,7 +142,7 @@ export default function ContactForm() {
                             value={values.service}
                             onChange={(v) => setValue({...values, service: v.target.value})}
                         >
-                            <option value="" disabled hidden>Select Service</option>
+                            <option value="" disabled hidden>{t('contactForm.serv')}</option>
                             {services.map((service) => (
                                 <option key={service.id} 
                                         value={service.id} 
@@ -168,7 +169,7 @@ export default function ContactForm() {
                     <textarea className={`text-sm appearance-none block w-full text-gray-700 border rounded-[2px] border border-gray-300 py-3 px-4 leading-tight focus:outline-none dark:text-[#F5F8FA] dark:border-[#2D3E50] dark:bg-[#2D3E50] focus:border-[#348C79] dark:focus:border-[#6941C6]
                                 ${invalids.includes(6) ? 'border-red-400' : ''}
                             `}
-                            placeholder="Type your message here..."
+                            placeholder={t('contactForm.type')}
                             value={values.message}
                             onChange={(v) => setValue({...values, message: v.target.value})}
                     />
@@ -182,7 +183,7 @@ export default function ContactForm() {
                         className="font-medium rounded-[2px] text-sm px-4 py-2 text-center inline-flex items-center me-2 mb-2 border border-[#348C79] bg-[#348C79] dark:border-[#6941C6] dark:bg-[#6941C6]"
                     >
                         <IoIosSend className="mr-1 w-4 h-4 text-white" />
-                        <span className="text-[12px] text-white dark:text-[#F5F8FA]">Send Message</span>
+                        <span className="text-[12px] text-white dark:text-[#F5F8FA]">{t('contactForm.btn')}</span>
                     </button>
                 </div>
             </div>

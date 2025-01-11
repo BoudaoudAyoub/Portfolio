@@ -18,5 +18,72 @@
             "servs": "Services proposés",
             "code": "Commits de code"
         }
-    }
+    },
+    "servicesTexts": {
+        "dev": {
+            "head": "Développement",
+            "text": "Je me concentre sur l'écriture d'un code propre et maintenable en adhérant constamment aux meilleures pratiques et en appliquant les bons modèles de conception lorsque cela est nécessaire. Mon objectif est de livrer des solutions qui privilégient la maintenabilité, la lisibilité, la testabilité, la simplicité et la cohérence, garantissant un code de haute qualité qui résiste à l'épreuve du temps."
+        },
+        "perform": {
+            "head": "Optimisation des Performances",
+            "text": "Je me spécialise dans l'identification des problèmes de performance et l'optimisation de l'efficacité du système. En réalisant des tests de performance ciblés et significatifs, je suis capable de refactorer le code ou de redessiner des fonctionnalités pour atteindre des performances optimales, assurant des systèmes fluides et réactifs."
+        },
+        "team": {
+            "head": "Gestion d'Équipe",
+            "text": "Je dirige ou contribue à des équipes dédiées à atteindre ces objectifs. En favorisant un environnement collaboratif et soutenant, je m'assure que tous les membres de l'équipe sont alignés sur les meilleures pratiques, les habilitant à produire un code de haute qualité et durable tout en encourageant un engagement commun vers l'excellence."
+        },
+        "codeReview": {
+            "head": "Revue de Code",
+            "text": "Je réalise des examens approfondis et des évaluations du code source des applications logicielles pour identifier les problèmes potentiels, améliorer sa qualité et garantir qu'il soit conforme aux exigences spécifiées et aux meilleures pratiques de l'industrie."
+        },
+        "devops": {
+            "head": "DevOps",
+            "text": "Je collabore à la stratégie et à la mise en œuvre de pipelines CI/CD automatisés, entraînant une augmentation de la productivité et une réduction des temps d'arrêt."
+        },
+        "architect": {
+            "head": "Conception de l'Architecture",
+            "text": "Je prends la tête de la conception architecturale, identifiant l'architecture la plus appropriée pour le système. Tout au long du processus de conception, je présente également des options architecturales alternatives au client, mettant en évidence leurs avantages et inconvénients pour une prise de décision éclairée et une discussion."
+        }
+    },
+    "inProgress": {
+        "t1": "En construction",
+        "t2": "Nous préparons quelque chose de spécial !",
+        "t3": "La page sera bientôt en ligne.",
+        "btn": "Retour à l'accueil"
+    },
+    "cv": {
+        "experience": {
+            "title": "Expérience Professionnelle",
+            "text": "Explorez mon parcours à travers divers rôles et entreprises, où j'ai évolué de développeur junior à ingénieur backend, puis à des postes de leadership d'équipe. Cette section met en avant les différents postes que j'ai occupés, ainsi que les expériences acquises dans chacun d'eux, démontrant ma progression et ma capacité d'adaptation dans des environnements et équipes variés."
+        },
+        "education": {
+            "title": "Formation & Diplômes",
+            "text": "Découvrez le parcours académique qui m'a façonné en tant qu'ingénieur logiciel qualifié. Ici, je partage mes diplômes, certifications et efforts d'apprentissage continu, mettant en lumière mon engagement envers le développement professionnel et mon adaptation à une industrie en constante évolution."
+        },
+        "skills": {
+            "title": "Mes Compétences",
+            "text": "J'utilise une gamme diversifiée de technologies et d'outils pour concevoir et fournir des solutions évolutives, efficaces et performantes. Des frameworks de développement modernes aux modèles d'architecture robustes, chaque compétence joue un rôle essentiel dans la réussite de mes projets. Les sections ci-dessous offrent un aperçu des technologies et méthodologies clés qui guident mon approche de l'ingénierie logicielle, reflétant un engagement envers l'innovation, la qualité et l'amélioration continue."
+        },
+        "about": {
+            "title": "À Propos de Moi",
+            "text": "Je suis un développeur logiciel .NET expérimenté avec plus de trois ans d'expertise dans la fourniture de solutions innovantes pour des entreprises internationales. Spécialisé dans le développement backend et le leadership, je suis passionné par la création de logiciels de haute qualité et évolutifs dans des environnements agiles. Mon objectif est de continuer à évoluer tout en contribuant à des solutions logicielles performantes et impactantes.",
+            "fullname": "Nom Complet",
+            "phone": "Téléphone",
+            "adr": "Adresse Mail",
+            "exp": "Expérience",
+            "nation": "Nationalité",
+            "lang": "Langues"
+        }
+    }, 
+    "contactForm":{
+        "head": "Contact",
+        "text": "Souhaitez-vous collaborer sur votre projet ? Partagez autant de détails que possible, et je vous recontacterai rapidement pour discuter de vos idées et, si vous le souhaitez, organiser une consultation sans engagement.",
+        "firstname": "Prénom",
+        "lastname": "Nom",
+        "mail": "Adresse email",
+        "phone": "Numéro de Téléphone",
+        "serv": "Sélectionnez un Service",
+        "type": "Tapez votre message ici",
+        "btn": "Envoyer le message"
+    }  
 }

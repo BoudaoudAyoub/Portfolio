@@ -4,41 +4,41 @@ import { IconType } from "react-icons";
 
 export interface IHeader{
     title: string,
-    displayName: string,
-    description: string,
+    nameKey: string,
+    descriptionKey: string,
 }
 
 const headers: IHeader[] = [
     {
         title: 'Experience',
-        displayName: 'Professional Experience',
-        description: "Explore my journey through various roles and companies, where I’ve progressed from jurnior developer to backend engineer to team leadership. This section highlights the different positions I’ve held, the experiences gained in each that demonstrates my growth and adaptability across diverse environments and teams.",
+        nameKey: 'cv.experience.title',
+        descriptionKey: 'cv.experience.text'
     },
     {
         title: 'Education',
-        displayName: 'Education & Degrees',
-        description: "Discover the academic journey that shaped me into a skilled software engineer. Here, I share my degrees, certifications, and ongoing learning efforts, showcasing my commitment to professional growth and staying ahead in an ever-evolving industry.",
+        nameKey: 'cv.education.title',
+        descriptionKey: 'cv.education.text'
     },
     {
         title: 'Skills',
-        displayName: 'My Skills',
-        description: "I leverage a diverse range of technologies and tools to design and deliver scalable, efficient, and high-performing solutions. From modern development frameworks to robust architectural patterns, each skill plays a vital role in ensuring the success of my projects. The sections below provide an overview of the key technologies and methodologies that drive my approach to software engineering, reflecting a commitment to innovation, quality, and continuous improvement.",
+        nameKey: 'cv.skills.title',
+        descriptionKey: 'cv.skills.text'
     },
     {
         title: 'About Me',
-        displayName: 'About Me',
-        description: "I am an experienced .NET software developer with over three years of expertise delivering innovative solutions for international companies. Specializing in backend development and leadership, I am passionate about creating high-quality, scalable software in agile environments. My goal is to continue growing while contributing to impactful, high-performance software solutions.",
+        nameKey: 'cv.about.title',
+        descriptionKey: 'cv.about.text'
     }
 ];
 
 // About Me details
 const aboutMe = [
-    { fieldName: "Fullname", fieldValue: "Ayoub Boudaoud" },
-    { fieldName: "Phone", fieldValue: "(+212 695666067)" },
-    { fieldName: "Email Address", fieldValue: "ayoubboudaoud136@gmail.com" },
-    { fieldName: "Experience", fieldValue: "5+ Years" },
-    { fieldName: "Nationality", fieldValue: "Moroccan" },
-    { fieldName: "Languages", fieldValue: "Arabic - English - French" },
+    { fieldName: 'cv.about.fullname', fieldValue: "Ayoub Boudaoud" },
+    { fieldName: 'cv.about.phone', fieldValue: "(+212 695666067)" },
+    { fieldName: 'cv.about.adr', fieldValue: "ayoubboudaoud136@gmail.com" },
+    { fieldName: 'cv.about.exp', fieldValue: "5+ Years" },
+    { fieldName: 'cv.about.nation', fieldValue: "Moroccan" },
+    { fieldName: 'cv.about.lang', fieldValue: "English - French" },
 ];
 
 // Work experience
