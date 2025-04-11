@@ -3,7 +3,9 @@ import pages from './pages';
 export default function MainRouting() {  
   return (
     <Routes> 
-      <Route path='' element={<pages.Home />}/> 
+      <Route path='' element={<pages.Home />}/>
+      <Route path='/' element={<pages.Home />}/>
+      <Route path='/portfolio' element={<pages.Home />}/> 
       <Route path='/services' element={<pages.Services />}/> 
       <Route path='/resume' element={<pages.Resume />}/>
       <Route path='/work' element={<pages.InProgress />}/> 
