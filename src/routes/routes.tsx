@@ -4,10 +4,10 @@ export default function MainRouting() {
   return (
     <Routes> 
       <Route path='' element={<pages.Home />}/>
-      <Route path='portfolio/services' element={<pages.Services />}/> 
-      <Route path='/resume' element={<pages.Resume />}/>
-      <Route path='/work' element={<pages.InProgress />}/> 
-      <Route path='/contact' element={<pages.Contact />}/> 
+      <Route path='Portfolio/services' element={<pages.Services />}/> 
+      <Route path='Portfolio/resume' element={<pages.Resume />}/>
+      <Route path='Portfolio/work' element={<pages.InProgress />}/> 
+      <Route path='Portfolio/contact' element={<pages.Contact />}/> 
     </Routes>
   );
 };

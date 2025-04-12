@@ -20,10 +20,10 @@ export default function Nav() {
     const { t } = useTranslation();
     const options: IMenuOptions[] = [
         { key: 1, name: "home", link: "home", isActive: true, path: "/" },
-        { key: 2, name: "services", link: "education", isActive: false, path: "/services" },
-        { key: 3, name: "resume", link: "experience", isActive: false, path: "/resume" },
-        { key: 4, name: "work", link: "projects", isActive: false, path: "/work" },
-        { key: 5, name: "contact", link: "contact", isActive: false, path: "/contact" },
+        { key: 2, name: "services", link: "education", isActive: false, path: "/Portfolio/services" },
+        { key: 3, name: "resume", link: "experience", isActive: false, path: "/Portfolio/resume" },
+        { key: 4, name: "work", link: "projects", isActive: false, path: "/Portfolio/work" },
+        { key: 5, name: "contact", link: "contact", isActive: false, path: "/Portfolio/contact" },
     ];
 
     const { activeLink, handleActiveChange } = useActiveLink(options);
