@@ -15,7 +15,7 @@ export default function RightHomeContent(){
                 >
                     <div className="mt-[28px] xl:mt-0 flex w-[350px] h-[350x] xl:w-full xl:h-full absolute">
                         <img
-                            src="/imgs/me.png"
+                            src="imgs/me.png"
                             alt="Ayoub Boudaoud"
                             className="object-contain m-auto rounded-full"
                         />

@@ -61,7 +61,7 @@ const experiences = [
                 location: "Kenitra, Morocco"
             }
         ],
-        duration: 'Full-time. 3 yrs 1 mo',
+        duration: 'Full-time. 3 yrs 5 mo',
         location: 'Kenitra – Morocco'
     },
     {

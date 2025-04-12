@@ -1,6 +1,6 @@
 import React from 'react';
 import useActiveLink from '../../../hooks/Actives/useActiveLink';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 export interface IMenuOptions {
@@ -17,13 +17,14 @@ function classNames(...classes: string[]) {
 
 export default function Nav() {
     const l = useLocation();
+    const navigate = useNavigate();
     const { t } = useTranslation();
     const options: IMenuOptions[] = [
-        { key: 1, name: "home", link: "home", isActive: true, path: "/" },
-        { key: 2, name: "services", link: "education", isActive: false, path: "/Portfolio/services" },
-        { key: 3, name: "resume", link: "experience", isActive: false, path: "/Portfolio/resume" },
-        { key: 4, name: "work", link: "projects", isActive: false, path: "/Portfolio/work" },
-        { key: 5, name: "contact", link: "contact", isActive: false, path: "/Portfolio/contact" },
+        { key: 1, name: "home", link: "home", isActive: true, path: "." },
+        { key: 2, name: "services", link: "education", isActive: false, path: "/services" },
+        { key: 3, name: "resume", link: "experience", isActive: false, path: "/resume" },
+        { key: 4, name: "work", link: "projects", isActive: false, path: "/work" },
+        { key: 5, name: "contact", link: "contact", isActive: false, path: "/contact" },
     ];
 
     const { activeLink, handleActiveChange } = useActiveLink(options);
@@ -47,8 +48,7 @@ export default function Nav() {
                     key={item.key}
                     onClick={() => {
                         handleActiveChange(item.key, !isCurrentRowActive(item.key));
-                        window.history.pushState({ from: location.pathname }, "", item.path);
-                        location.reload();
+                        navigate(item.path);
                     }}                    
                     className={classNames(
                         `${isCurrentRowActive(item.key) ? ('text-[#348C79] dark:text-[#6941C6]'):('text-[#2D3E50] dark:text-[#F5F8FA]')}`,

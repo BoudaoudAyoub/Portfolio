@@ -15,7 +15,7 @@ export default function Education(){
                     >
                         <div className='w-[50px] h-[50px] p-1'>
                             {elm.logoUrl ? (
-                                <img src={`/imgs/${elm.logoUrl}`} className='rounded' />
+                                <img src={`imgs/${elm.logoUrl}`} className='rounded' />
                             ):(
                                 <FaRegBuilding className='w-[80%] h-[80%] m-auto text-gray-500' />
                             )}
